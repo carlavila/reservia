@@ -1,20 +1,203 @@
-body {
-    background-image: url(images/logo/Reservia.svg); 
-    background-attachment: scroll; /* Le fond restera fixe */
-    background-repeat: no-repeat; /* Le fond ne sera pas répété */
-    background-position: top left; /* Le fond sera placé en haut à droite */
-    margin: 0%;
-    padding: 0%;
+@font-face {
+    font-family: "Raleway";
+    src: url("raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+
+html, body {
+    background-attachment: scroll;  /* Le fond restera fixe */
+    margin: 2px;
+    padding: 25px;
+    font-family: "Raleway";
+    }
+
+.logo {
+    width: 80px;
+    height: 40px;
+}
+
+/* MENU */
+
+#menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;  
+}
+    
+#menu ul {     /* Ensemble du menu */
+    text-align: right;  
+    overflow: hidden;
+}
+
+#menu li {   /* Élements des listes */
+ list-style-type: none;
+ display: inline-block;
+}    
+
+#menu a {       /* Contenus des listes */
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 12px;
+}      
+
+.hébergements a {
+    color:#0065FC;
+}
+
+.activités a {
+    color: black;
+}
+
+.sinscrire a {
+    color: #0065FC;
+    font-family:"Raleway-SemiBold";
+}
+
+h2 {
+    font-family: "Raleway-SemiBold";
+}
+
+p {
+    color: grey;
+    font-family: "Raleway";
+}
+
+h3 {
+    font-family: "Raleway";  
+}
+
+#recherches {
+    position: relative;
+    width: 1040px;
+    height: auto;
+    margin-top: 2px; 
+    margin-bottom: 3px; 
+    margin-left: 0px; 
+    margin-right: 25px;
+    border: 1px solid rgb(5, 4, 4);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.formulaires {
+    display: inline-block;
+}
+
+.formulaires .champ {
+    font-family: "Raleway-SemiBold";
+}
+
+.formulaire .bouton {
+    background-color: #0065FC;
+    width: 100px;
+    line-height: 30px;
+    color: white;
+    font-family: "Raleway";
+}
+
+.bouton:hover {
+    text-decoration: underline;
+}
+
+#filtres {
+    width: 100%;
+}
+
+#filtres ul {
+    text-align: left;
+    overflow: hidden;
+}
+
+#filtres li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#filtres a {    
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 12px;
+}
+
+.économique a {
+    color: black;
+    font-family: "Raleway-SemiBold";
+}
+
+.familial a {
+    color: black;
+    font-family: "Raleway-SemiBold";
+}
+
+.romantique a {
+    color: black;
+   font-family: "Raleway-SemiBold";
+}
+
+.animaux-autorisés a {
+    color: black;
+    font-family: "Raleway-SemiBold";
 }
 
 #conteneur {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+    
+h3 {
+    font-family: "Raleway-SemiBold";
+    text-align: left;
+    margin-top: 30px; 
+    margin-bottom: 3px; 
+    margin-left: 30px; 
+    margin-right: 25px;
+
+}
+img {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
 }
 
-. {
-    flex: 1;
+.cannebiere {
+    text-align: center;
+    float: left;
+    margin-top: 2px; 
+    margin-bottom: 3px; 
+    margin-left: 30px; 
+    margin-right: 25px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+  } 
+
+  .port {
+    text-align: center;
+    float: right;
+    margin-top: 2px; 
+    margin-bottom: 3px; 
+    margin-left: 2px; 
+    margin-right: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+.cont-item:nth-child(1) {
+    align-self: flex-end;
+    background-color:#F2F2F2;
+    flex: 2;
+}
+
+.cont-item:nth-child(2) {
+    align-self: flex-end;
+    background-color:#F2F2F2; 
 }
 
