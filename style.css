@@ -7,25 +7,26 @@
     src: url("raleway/Raleway-SemiBold.ttf") format("truetype");
 }
 
-html, body {
+html, body, head {
     background-attachment: scroll;  /* Le fond restera fixe */
-    margin: 2px;
-    padding: 25px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
     font-family: "Raleway";
     }
 
 .logo {
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
 }
 
 /* MENU */
 
 #menu {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;  
+    margin-top: 2px; 
+    margin-bottom: 3px; 
+    margin-left: 0px; 
+    margin-right: 25px;
 }
     
 #menu ul {     /* Ensemble du menu */
@@ -70,6 +71,8 @@ h3 {
     font-family: "Raleway";  
 }
 
+/* RECHERCHER */
+
 #recherches {
     position: relative;
     width: 1040px;
@@ -101,6 +104,8 @@ h3 {
 .bouton:hover {
     text-decoration: underline;
 }
+
+/* FILTRES */
 
 #filtres {
     width: 100%;
@@ -142,62 +147,79 @@ h3 {
     font-family: "Raleway-SemiBold";
 }
 
-#conteneur {
+/* HÉBERGEMENTS À MARSEILLE */
+
+#conteneur1 {
+    width: 80%;
+    height: 500px;
+    max-width: 1300px;
+    margin: 10px 50px 30px 30px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.cont-item {
+    width: 250px;
+    height: auto;
+}
+
+
+.cont-item figure {
+    width: 150px;
+    height: 150px;
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   border: 3px solid rgb(255, 255, 255);
+   border-radius: 10px 10px 10px 60px;
+   text-decoration: none;
+}
+
+.cont-item figcaption {
+    text-decoration: none;
+    color: black;
+}
+
+.cont-item img {
+   width: 150px;
+   height: auto;
+   border: 3px solid rgb(255, 255, 255);
+   border-radius: 10px 10px 10px 10px;
+}
+
+
+
+/* LES PLUS POPULAIRES */
+
+#conteneur2 {
+    width: 80%;
+    max-width: 1300px;
+    margin: 10px 25px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    background-color:#F2F2F2;  
 }
-    
+
+
+
+
 h3 {
     font-family: "Raleway-SemiBold";
     text-align: left;
-    margin-top: 30px; 
-    margin-bottom: 3px; 
-    margin-left: 30px; 
-    margin-right: 25px;
+    margin: 30px;
 
 }
-img {
-    border-radius: 10px 10px 10px 10px;
-    position: relative;
-    width: 200px;
-    overflow: hidden;
+
 }
 
-.cannebiere {
-    text-align: center;
-    float: left;
-    margin-top: 2px; 
-    margin-bottom: 3px; 
-    margin-left: 30px; 
-    margin-right: 25px;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-  } 
 
-  .port {
-    text-align: center;
-    float: right;
-    margin-top: 2px; 
-    margin-bottom: 3px; 
-    margin-left: 2px; 
-    margin-right: 200px;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-  }
-  
-.cont-item:nth-child(1) {
-    align-self: flex-end;
-    background-color:#F2F2F2;
-    flex: 2;
-}
 
-.cont-item:nth-child(2) {
-    align-self: flex-end;
-    background-color:#F2F2F2; 
-}
 
