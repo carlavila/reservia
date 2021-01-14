@@ -7,7 +7,7 @@
     src: url("raleway/Raleway-SemiBold.ttf") format("truetype");
 }
 
-html, body, head {
+html, body {
     background-attachment: scroll;  /* Le fond restera fixe */
     height: 100vh;
     margin: 0px;
@@ -18,6 +18,22 @@ html, body, head {
 .logo {
     width: 60px;
     height: 30px;
+    margin: 30px;
+    float: left;
+}
+
+h2 {
+    font-family: "Raleway-SemiBold";
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.p1 {
+    color: gray;
+    margin-left: 30px;
+    line-height: 20%;
+    margin-bottom: 22px;
+    font-size: 15px;
 }
 
 /* MENU */
@@ -26,17 +42,20 @@ html, body, head {
     margin-top: 2px; 
     margin-bottom: 3px; 
     margin-left: 0px; 
-    margin-right: 25px;
+    margin-right: 30px;
 }
     
 #menu ul {     /* Ensemble du menu */
     text-align: right;  
     overflow: hidden;
+    margin-top: 0px;
 }
 
 #menu li {   /* Élements des listes */
- list-style-type: none;
- display: inline-block;
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }    
 
 #menu a {       /* Contenus des listes */
@@ -44,6 +63,11 @@ html, body, head {
     padding: 20px 30px;
     font-size: 12px;
 }      
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
 
 .hébergements a {
     color:#0065FC;
@@ -58,78 +82,131 @@ html, body, head {
     font-family:"Raleway-SemiBold";
 }
 
-h2 {
-    font-family: "Raleway-SemiBold";
-}
-
-p {
-    color: grey;
-    font-family: "Raleway";
-}
-
-h3 {
-    font-family: "Raleway";  
-}
-
 /* RECHERCHER */
 
 #recherches {
     position: relative;
-    width: 1040px;
+    width: 320px;
     height: auto;
-    margin-top: 2px; 
-    margin-bottom: 3px; 
-    margin-left: 0px; 
-    margin-right: 25px;
-    border: 1px solid rgb(5, 4, 4);
-    border-radius: 10px 10px 10px 10px;
+    margin-left: 30px;
 }
 
 .formulaires {
     display: inline-block;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .formulaires .champ {
     font-family: "Raleway-SemiBold";
+    border: none;
+    border-left: 1px solid #F2F2F2;
 }
 
-.formulaire .bouton {
-    background-color: #0065FC;
-    width: 100px;
-    line-height: 30px;
+.formulaires .bouton {
     color: white;
     font-family: "Raleway";
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 8px;
+    width: 100px;
+    line-height: 35px;
 }
 
 .bouton:hover {
     text-decoration: underline;
 }
 
+.fa-map-marker-alt {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* FILTRES */
+
+.filtres {
+    font-family: "Raleway-SemiBold";
+    font-size: 15px;
+}
 
 #filtres {
     width: 100%;
+    height: auto;
+    float: right;
+}
+
+#filtres h3 {
+    float: left;
+    line-height: 10%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 30px;
 }
 
 #filtres ul {
-    text-align: left;
     overflow: hidden;
+    margin-top: 30px;
+    display: inline-block;
 }
 
 #filtres li {
     list-style-type: none;
-    display: inline-block;
 }
 
 #filtres a {    
     text-decoration: none;
-    padding: 20px 30px;
+    padding-left: 20px;
+    padding-right: 50px;
     font-size: 12px;
 }
 
-.économique a {
+.premiere {
+    float: left;
+    margin-left: 5px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.premiere .economique {
+    border: 2px solid #dbd9d9;
+    border-radius: 20px;
+    width: 165px;
+}
+
+.economique i {
+    color: #0065FC;
+    font-size: 13px;
+    border: 2px solid #dbd9d9;
+    border-radius: 50px;
+}
+
+.economique a {
     color: black;
     font-family: "Raleway-SemiBold";
+}
+
+.deuxieme {
+    float: left;
+    margin-left: 5px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.deuxieme .familial {
+    border: 2px solid #dbd9d9;
+    border-radius: 20px;
+}
+
+.familial i {
+    color: #0065FC;
+    line-height: 15px;
 }
 
 .familial a {
@@ -137,89 +214,238 @@ h3 {
     font-family: "Raleway-SemiBold";
 }
 
-.romantique a {
-    color: black;
-   font-family: "Raleway-SemiBold";
+.troisieme {
+    float: left;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.animaux-autorisés a {
+.troisieme .romantique {
+    border: 2px solid #dbd9d9;
+    border-radius: 20px;
+}
+
+.romantique i {
+    color: #0065FC; 
+    line-height: 15px;
+}
+
+.romantique a {
     color: black;
     font-family: "Raleway-SemiBold";
 }
+
+.quatrieme {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.quatrieme .animaux-autorises {
+    border: 2px solid #dbd9d9;
+    border-radius: 20px;
+}
+
+.animaux-autorises i {
+    color: #0065FC;
+    line-height: 15px;
+}
+
+.animaux-autorises a {
+    color: black;
+    font-family: "Raleway-SemiBold";
+}
+
+.fa-info-circle {
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.p2 {
+    color: gray;
+    font-size: 15px;
+}
+
 
 /* HÉBERGEMENTS À MARSEILLE */
 
 #conteneur1 {
-    width: 80%;
-    height: 500px;
     max-width: 1300px;
-    margin: 10px 50px 30px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: space-between;
-    background-color:#F2F2F2;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.cont-item {
-    width: 250px;
+    width: 65%;
     height: auto;
+    margin: 0px 0px 0px 30px;
+    display: flex;
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 0px 0px;
 }
 
+.hebergements {
+    font-size: 18px;
+    font-family: "Raleway-SemiBold";
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+#conteneur2 {
+    max-width: 1200px;
+    width: 65%;
+    height: auto;
+    margin: 0px 0px 0px 30px;
+    background-color:#F2F2F2;
+    border-radius: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+.cont-item {
+    width: 50%;
+}
 
 .cont-item figure {
-    width: 150px;
-    height: 150px;
-   text-align: center;
-   background-color: rgb(255, 255, 255);
-   border: 3px solid rgb(255, 255, 255);
-   border-radius: 10px 10px 10px 60px;
-   text-decoration: none;
-}
-
-.cont-item figcaption {
-    text-decoration: none;
+    width: 206px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #e4e4e4;
+ }
+ 
+ .cont-item figcaption strong {
+    font-family: "Raleway-SemiBold";
     color: black;
+    font-size: 15px;
+    padding-left: 10px;
 }
 
-.cont-item img {
-   width: 150px;
-   height: auto;
-   border: 3px solid rgb(255, 255, 255);
-   border-radius: 10px 10px 10px 10px;
+.cont-item figcaption span {
+    color: grey;
+    font-size: 13px;
+    padding-left: 10px;
 }
 
+.cont-item a {
+    text-decoration: none;
+}
 
+.cont-item img { 
+    width: 200px;
+    height: 120px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.etoiles {
+    padding-left: 10px;
+}
+
+.fa-star {
+    color:#0065FC;
+    background-color: white;
+    font-size: 10px;
+}
+
+.etoilegrise .fa-star{
+    color:#d6cfcf;
+    font-size: 10px;
+}
+
+#conteneur3 {
+    width: 65%;
+    height: auto;
+    margin: 0px 0px 0px 30px;
+    display: flex;
+    background-color:#F2F2F2;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.afficher {
+    font-size: 15px;
+    font-family: "Raleway-SemiBold";
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.afficher a {
+    color: black;
+    text-decoration: none;
+}
+
+.afficher:hover {
+    text-decoration: underline;
+}
 
 /* LES PLUS POPULAIRES */
 
-#conteneur2 {
-    width: 80%;
-    max-width: 1300px;
-    margin: 10px 25px 30px 30px;
+#conteneur4 {
+    width: 30%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color:#F2F2F2;  
+    justify-content: left;
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 30px 0px 35px;
 }
 
-
-
-
-h3 {
+#populaires {
+    font-size: 18px;
     font-family: "Raleway-SemiBold";
-    text-align: left;
-    margin: 30px;
-
+    padding-left: 35px;
+    padding-top: 15px;
 }
 
+.fa-chart-line {
+   padding-left: 150px;
+   font-size: 18px;
+}
+   
+#conteneur5 {
+        width: 30%;
+        height: auto;
+        margin: 0px 0px 0px 35px;
+        background-color:#F2F2F2;
+        border-radius: 0px 0px 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
 }
 
+.flotte {
+    width: 330px;
+    height: 130px;
+    margin-left: 35px;
+    list-style-type: none;
+}
 
+.flotte a {
+    text-decoration: none;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #e4e4e4;
+}
 
+.flotte strong {
+    font-family: "Raleway-SemiBold";
+    color: black;
+    font-size: 15px;
+}
 
+.flotte span {
+    color: grey;
+    font-size: 13px;
+}
+
+.flotte img {
+    float: left;
+    width: 175px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+}
