@@ -9,15 +9,21 @@
 
 html, body {
     background-attachment: scroll;  /* Le fond restera fixe */
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: "Raleway";
     }
 
+head {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    display: flex;
+    display: block;
     flex-direction: column;
+    margin: 0;
 }
 
 .contenu {
@@ -31,16 +37,16 @@ body {
     float: left;
 }
 
-h2 {
+h1 {
     font-family: "Raleway-SemiBold";
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 50px;
 }
 
 .p1 {
     color: gray;
     margin-left: 50px;
-    line-height: 20%;
     margin-bottom: 22px;
     font-size: 16px;
 }
@@ -56,7 +62,7 @@ h2 {
 }
     
 #menu ul {     /* Ensemble du menu */
-    text-align: right;  
+    text-align: right; 
     overflow: hidden;
     margin-top: 0px;
 }
@@ -102,7 +108,7 @@ h2 {
 }
 
 .formulaires {
-    width: 395px;
+    width: 400px;
     display: inline-block;
     border: 0.5px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
@@ -283,6 +289,10 @@ h2 {
     font-family: "Raleway-SemiBold";
 }
 
+.lgts{
+    margin-bottom: 30px;
+}
+
 .fa-info-circle {
     background-color: white;
     margin-left: 50px;
@@ -299,38 +309,44 @@ h2 {
 /* HÉBERGEMENTS À MARSEILLE */
 
 .deuxiemesection {
+    height: auto;
     display: grid;
-    column-gap: 40px;
-    grid-template-columns: 6fr 3fr;
-}
-
-#conteneur1 {
-    width: 1200px;
-    height: 740px;
-    display: grid;
-    background-color:#F2F2F2;
+    grid-template-columns: 65% 30%;
     margin-left: 50px;
-    border-radius: 20px 20px 20px 20px;
-    grid-template-columns: repeat(3, 380px);
-    grid-template-rows: 50px, 150px, 150px;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    padding-right: 15px;
+    column-gap: 40px;
 }
 
 .hebergements {
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 0px 0px;
     padding-top: 20px;
-    display: block;
-    grid-column: 1/-1;
+    
+    padding-left: 35px;
 }
 
+.hebergements h2{
+    font-family: "Raleway-SemiBold";
+    font-size: 20px;
+}
+
+#conteneur1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color:#F2F2F2;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+  
 .bloc1 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -378,10 +394,7 @@ h2 {
 .bloc2 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -429,10 +442,7 @@ h2 {
 .bloc3 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -480,10 +490,7 @@ h2 {
 .bloc4 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -531,10 +538,7 @@ h2 {
 .bloc5 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -582,10 +586,7 @@ h2 {
 .bloc6 {
     width: 310px;
     height: 230px;
-    display: block;
-    margin-left: 40px;
     background-color: white;
-    padding: 2px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
@@ -645,6 +646,11 @@ h2 {
     font-size: 10px;
 }
 
+.afficher {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
 .afficher a {
     font-family: "Raleway-SemiBold";
     text-decoration: none;
@@ -661,26 +667,31 @@ h2 {
 /*LES PLUS POPULAIRES */
 
 #conteneur2 {
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows:  50px, 200px, 200px, 200px;
-    width: 510px;
-    height: 740px;
-    row-gap: 20px;
-    align-items: start;
+    grid-column-start: 2;
+    grid-column-end: 2;
     background-color:#F2F2F2;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.hebergement {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    padding-left: 25px;
+.populaires {
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+}
+
+.populaires h2{
+    font-family: "Raleway-SemiBold";
+    font-size: 20px;
 }
 
 .fa-chart-line {
+    padding-left: 300px;
     font-size: 18px;
 }
 
@@ -697,8 +708,8 @@ h2 {
 }
 
 .flotte1 figure {
-    width: 440px;
-    height: 150px;
+    width: 400px;
+    height: 170px;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -708,7 +719,7 @@ h2 {
 .flotte1 img {
     object-fit: cover;
     width: 160px;
-    height: 145px;
+    height: 170px;
     border-radius: 1rem 0 0 1rem;
 }
 
@@ -720,22 +731,22 @@ h2 {
     position: absolute;
     margin-left: 10px;
     margin-top: 2px;
-    padding-left: 250px;
+    padding-left: 250px;  
 }
-
+    
 .matin h3 {
     font-family: "Raleway-SemiBold";
     color: black;
     font-size: 13px;
 }
-
+    
 .matin p {
     color: grey;
     font-size: 11px;
     margin-left: 10px;
     padding-left: 100px;
 }
-
+    
 .flotte2 {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -749,8 +760,8 @@ h2 {
 }   
 
 .flotte2 figure {
-    width: 440px;
-    height: 150px;
+    width: 400px;
+    height: 170px;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -760,7 +771,7 @@ h2 {
 .flotte2 img {
     object-fit: cover;
     width: 160px;
-    height: 145px;
+    height: 170px;
     border-radius: 1rem 0 0 1rem;
     }
     
@@ -807,8 +818,8 @@ h2 {
 }   
 
 .flotte3 figure {
-    width: 440px;
-    height: 150px;
+    width: 400px;
+    height: 170px;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -818,7 +829,7 @@ h2 {
 .flotte3 img {
     object-fit: cover;
     width: 160px;
-    height: 145px;
+    height: 170px;
     border-radius: 1rem 0 0 1rem;
     }
     
@@ -843,6 +854,7 @@ h2 {
 }
 
 
+
 /* ACTIVITÉS À MARSEILLE */
 
 .activitestitre {
@@ -853,8 +865,9 @@ h2 {
 
 #activites {
     display: grid;
+    width: 100%;
     row-gap: 2px;
-    grid-template-columns: repeat(4, 460px);
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: 360px 450px;
     margin-left: 10px;
 }
