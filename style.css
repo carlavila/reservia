@@ -21,9 +21,10 @@ head {
 }
 
 body {
+    max-width: 1800px;
     display: block;
     flex-direction: column;
-    margin: 0;
+    margin: auto;
 }
 
 .contenu {
@@ -31,9 +32,9 @@ body {
 }
 
 .logo {
-    width: 90px;
-    height: 45px;
-    margin: 50px;
+    width: 100px;
+    height: 50px;
+    margin: 20px 0px 0 50px;
     float: left;
 }
 
@@ -41,7 +42,7 @@ h1 {
     font-family: "Raleway-SemiBold";
     margin-left: 50px;
     font-size: 22px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .p1 {
@@ -49,6 +50,7 @@ h1 {
     margin-left: 50px;
     margin-bottom: 22px;
     font-size: 16px;
+    line-height: 5px;
 }
 
 
@@ -70,7 +72,6 @@ h1 {
 #menu li {   /* Élements des listes */
     list-style-type: none;
     display: inline-block;
-    padding-top: 45px;
     padding-bottom: 30px;
 }    
 
@@ -78,10 +79,11 @@ h1 {
     text-decoration: none;
     padding: 30px 30px;
     font-size: 16px;
+    display: inline-block;
 }      
 
 #menu a:hover {
-    text-decoration: underline;
+    border-top: 3px solid blue;
 }
 
 
@@ -102,13 +104,12 @@ h1 {
 /* RECHERCHER */
 
 #recherches {
-    position: relative;
     height: auto;
     margin-left: 50px;
 }
 
 .formulaires {
-    width: 400px;
+    width: 25%;
     display: inline-block;
     border: 0.5px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
@@ -117,20 +118,19 @@ h1 {
 .formulaires .champ {
     font-family: "Raleway-SemiBold";
     border: none;
-    border-left: 1px solid #F2F2F2;
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 15px;
 }
 
 .formulaires .bouton {
+    width: 30%;
+    line-height: 40px;
+    font-size: 16px;
+    margin-left: 45px;
     color: white;
     font-family: "Raleway-SemiBold";
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
-    margin-left: 65px;
-    width: 104px;
-    line-height: 40px;
-    font-size: 14px;
 }
 
 .bouton:hover {
@@ -138,9 +138,8 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 15px;
+    background-color: #F2F2F2;
 }
 
 
@@ -167,6 +166,7 @@ h1 {
 }
 
 #filtres ul {
+    width: 50%;
     overflow: hidden;
     margin-top: 30px;
     display: inline-block;
@@ -178,9 +178,8 @@ h1 {
 
 #filtres a {    
     text-decoration: none;
-    font-size: 14px;
-    margin: 10px;
-    display: inline-block;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .premiere {
@@ -189,19 +188,24 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    transition:0.5s;
+}
+
+.premiere:hover {
+    transform : scale(1.2);
 }
 
 .premiere .economique {
-    border: 2px solid #dbd9d9;
+    border: 1px solid #dbd9d9;
     border-radius: 20px;
 }
 
 .economique i {
     color: #0065FC;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #deebff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 13px;
 }
 
 .economique a {
@@ -215,7 +219,12 @@ h1 {
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 25px;
+    transition:0.5s;
+}
+
+.deuxieme:hover {
+    transform : scale(1.2);
 }
 
 .deuxieme .familial {
@@ -225,10 +234,10 @@ h1 {
 
 .familial i {
     color: #0065FC;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #deebff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 13px;
 }
 
 .familial a {
@@ -243,6 +252,11 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
+    transition:0.5s;
+}
+
+.troisieme:hover {
+    transform : scale(1.2);
 }
 
 .troisieme .romantique {
@@ -252,10 +266,10 @@ h1 {
 
 .romantique i {
     color: #0065FC; 
-    font-size: 13px;
+    font-size: 15px;
     background-color: #deebff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 13px;
 }
 
 .romantique a {
@@ -269,6 +283,11 @@ h1 {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    transition:0.5s;
+}
+
+.quatrieme:hover {
+    transform : scale(1.2);
 }
 
 .quatrieme .animaux-autorises {
@@ -278,10 +297,10 @@ h1 {
 
 .animaux-autorises i {
     color: #0065FC;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #deebff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 13px;
 }
 
 .animaux-autorises a {
@@ -316,322 +335,86 @@ h1 {
     column-gap: 40px;
 }
 
-.hebergements {
+#hebergementsamarseille {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
     background-color:#F2F2F2;
-    border-radius: 20px 20px 0px 0px;
-    padding-top: 20px;
-    
-    padding-left: 35px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.alignement {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hebergements {
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 .hebergements h2{
     font-family: "Raleway-SemiBold";
-    font-size: 20px;
+    font-size: 22px;
 }
 
-#conteneur1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    background-color:#F2F2F2;
-    border-radius: 0px 0px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-around;
-}
-
-  
-.bloc1 {
-    width: 310px;
-    height: 230px;
+.bannieres {
+    width: 25%;
+    margin: 15px 30px 15px 30px;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
     transition:0.5s;
 } 
 
-.bloc1:hover {
+.bannieres:hover {
     transform : scale(1.2);
 }
 
-.bloc1 figure {
-    display: block;
+.bannieres figure {
     margin-block-start: 0px;
-    margin-block-end: 50px;
+    margin-block-end: 10px;
     margin-inline-start: 0px;
     margin-inline-end: 5px;
 }
 
- .bloc1 figcaption strong {
+ .bannieres figcaption strong {
     font-family: "Raleway-SemiBold";
     color: black;
     font-size: 15px;
     padding-left: 10px;
 }
 
-.bloc1 figcaption span {
+.bannieres figcaption span {
     color: grey;
     font-size: 13px;
     padding-left: 10px;
 }
 
-.bloc1 a {
+.bannieres a {
     text-decoration: none;
 }
 
-.bloc1 img { 
+.bannieres img { 
     border: 3px solid rgb(255, 255, 255);
     object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
+    width: 100%;
+    height: 130px;
     border-radius: 1rem 1rem 0 0;
 }
 
-.bloc2 {
-    width: 310px;
-    height: 230px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition:0.5s;
-} 
-
-.bloc2:hover {
-    transform : scale(1.2);
-}
-
-.bloc2 figure {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 50px;
-    margin-inline-start: 0px;
-    margin-inline-end: 5px;
-}
-
- .bloc2 figcaption strong {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.bloc2 figcaption span {
-    color: grey;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-.bloc2 a {
-    text-decoration: none;
-}
-
-.bloc2 img { 
-    border: 3px solid rgb(255, 255, 255);
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.bloc3 {
-    width: 310px;
-    height: 230px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition:0.5s;
-} 
-
-.bloc3:hover {
-    transform : scale(1.2);
-}
-
-.bloc3 figure {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 50px;
-    margin-inline-start: 0px;
-    margin-inline-end: 5px;
-}
-
- .bloc3 figcaption strong {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.bloc3 figcaption span {
-    color: grey;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-.bloc3 a {
-    text-decoration: none;
-}
-
-.bloc3 img { 
-    border: 3px solid rgb(255, 255, 255);
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.bloc4 {
-    width: 310px;
-    height: 230px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition:0.5s;
-} 
-
-.bloc4:hover {
-    transform : scale(1.2);
-}
-
-.bloc4 figure {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 50px;
-    margin-inline-start: 0px;
-    margin-inline-end: 5px;
-}
-
- .bloc4 figcaption strong {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.bloc4 figcaption span {
-    color: grey;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-.bloc4 a {
-    text-decoration: none;
-}
-
-.bloc4 img { 
-    border: 3px solid rgb(255, 255, 255);
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.bloc5 {
-    width: 310px;
-    height: 230px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition:0.5s;
-} 
-
-.bloc5:hover {
-    transform : scale(1.2);
-}
-
-.bloc5 figure {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 50px;
-    margin-inline-start: 0px;
-    margin-inline-end: 5px;
-}
-
- .bloc5 figcaption strong {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.bloc5 figcaption span {
-    color: grey;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-.bloc5 a {
-    text-decoration: none;
-}
-
-.bloc5 img { 
-    border: 3px solid rgb(255, 255, 255);
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.bloc6 {
-    width: 310px;
-    height: 230px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    transition:0.5s;
-} 
-
-.bloc6:hover {
-    transform : scale(1.2);
-}
-
-.bloc6 figure {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 50px;
-    margin-inline-start: 0px;
-    margin-inline-end: 5px;
-}
-
- .bloc6 figcaption strong {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.bloc6 figcaption span {
-    color: grey;
-    font-size: 13px;
-    padding-left: 10px;
-}
-
-.bloc6 a {
-    text-decoration: none;
-}
-
-.bloc6 img { 
-    border: 3px solid rgb(255, 255, 255);
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    width: 350px;
-    height: 150px;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.etoiles {
+.etoiles1 {
     padding-left: 10px;
 }
 
@@ -647,15 +430,15 @@ h1 {
 }
 
 .afficher {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 5px;
-    padding-left: 40px;
+    padding-left: 5px;
 }
 .afficher a {
     font-family: "Raleway-SemiBold";
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 35px;
 }
 
@@ -666,204 +449,103 @@ h1 {
 
 /*LES PLUS POPULAIRES */
 
-#conteneur2 {
+#lespluspopulaires {
+    width: 100%;
     grid-column-start: 2;
     grid-column-end: 2;
     background-color:#F2F2F2;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .populaires {
-    background-color:#F2F2F2;
-    border-radius: 20px 20px 0px 0px;
     padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
 .populaires h2{
     font-family: "Raleway-SemiBold";
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .fa-chart-line {
-    padding-left: 300px;
-    font-size: 18px;
+    font-size: 22px;
+    padding-left: 220px;
 }
 
-.flotte1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.flotte {
     transition:0.5s;
 }
 
-.flotte1:hover {
+.flotte:hover {
     transform : scale(1.2);
 }
 
-.flotte1 figure {
-    width: 400px;
+.flotte figure {
+    width: 85%;
     height: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    padding: 2px;
 }
 
-.flotte1 img {
+.flotte img {
     object-fit: cover;
-    width: 160px;
-    height: 170px;
+    width: 35%;
+    height: 160px;
     border-radius: 1rem 0 0 1rem;
+    padding: 5px;
 }
 
-.flotte1 a {
+.flotte a {
     text-decoration: none;
 }
 
-.matin {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 2px;
-    padding-left: 250px;  
+.legende{
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 25px;
 }
-    
-.matin h3 {
+
+.legende figcaption strong {
     font-family: "Raleway-SemiBold";
     color: black;
-    font-size: 13px;
+    font-size: 15px;
 }
-    
-.matin p {
+
+.legende figcaption span {
     color: grey;
-    font-size: 11px;
-    margin-left: 10px;
-    padding-left: 100px;
-}
-    
-.flotte2 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    transition:0.5s;
-    }
-
-.flotte2:hover {
-    transform : scale(1.2);
-}   
-
-.flotte2 figure {
-    width: 400px;
-    height: 170px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    padding: 2px;
-    }
-    
-.flotte2 img {
-    object-fit: cover;
-    width: 160px;
-    height: 170px;
-    border-radius: 1rem 0 0 1rem;
-    }
-    
-.flotte2 a {
-    text-decoration: none;
+    font-size: 13px;
 }
 
 .etoiles2 {
-    margin-left: 10px;
-    padding-left: 100px;
-    padding-top: 10px;
+    padding-top: 65px;
+}
+
+.etoiles3 {
+    padding-top: 40px;
 }
 
 .etoilegrise2 .fa-star {
     color:#d6cfcf;
 }
 
-.eau h3 {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 13px;
-    margin-left: 10px;
-    margin-top: 2px;
-    padding-left: 100px; 
-}
-
-.eau p {
-    color: grey;
-    font-size: 11px;
-    margin-left: 10px;
-    padding-left: 100px;
-}
-
-.flotte3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    transition:0.5s;
-    }
-
-.flotte3:hover {
-    transform : scale(1.2);
-}   
-
-.flotte3 figure {
-    width: 400px;
-    height: 170px;
-    background-color: white;
-    border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    padding: 2px;
-    }
-    
-.flotte3 img {
-    object-fit: cover;
-    width: 160px;
-    height: 170px;
-    border-radius: 1rem 0 0 1rem;
-    }
-    
-.flotte3 a {
-    text-decoration: none;
-}
-
-.bleu h3 {
-    font-family: "Raleway-SemiBold";
-    color: black;
-    font-size: 13px;
-    margin-left: 10px;
-    margin-top: 2px;
-    padding-left: 100px; 
-}
-
-.bleu p {
-    color: grey;
-    font-size: 11px;
-    margin-left: 10px;
-    padding-left: 100px;
-}
-
-
 
 /* ACTIVITÉS À MARSEILLE */
 
 .activitestitre {
     font-family: "Raleway-SemiBold";
-    padding-left: 10px;
+    padding-left: 50px;
     padding-top: 35px;
 }
 
-#activites {
+#activitesamarseille {
     display: grid;
     width: 100%;
     row-gap: 2px;
@@ -873,6 +555,7 @@ h1 {
 }
 
 .cont-item1 {
+    width: 90%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -884,7 +567,6 @@ h1 {
     transform : scale(1.2);
  }
 
-
 .cont-item1 a {
     text-decoration: none;
 }
@@ -893,13 +575,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 585px;
 }
 
 .cont-item1 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 530px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -913,6 +595,7 @@ h1 {
 }
 
 .cont-item2 {
+    width: 90%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -932,13 +615,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 320px;
 }
 
 .cont-item2 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 260px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -952,6 +635,7 @@ h1 {
 }
 
 .cont-item3 {
+    width: 90%;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -971,13 +655,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 585px;
 }
 
 .cont-item3 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 530px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -991,6 +675,7 @@ h1 {
 }
 
 .cont-item4 { 
+    width: 90%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -1010,13 +695,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 320px;
 }
 
 .cont-item4 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 260px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -1030,6 +715,7 @@ h1 {
 }
 
 .cont-item5 { 
+    width: 90%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -1049,13 +735,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 220px;
 }
 
 .cont-item5 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 160px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -1069,6 +755,7 @@ h1 {
 }
 
 .cont-item6 {
+    width: 90%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -1088,13 +775,13 @@ h1 {
     display: block;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 390px;
+    width: 90%;
     height: 220px;
 }
 
 .cont-item6 img {
     object-fit: cover;
-    width: 390px;
+    width: 100%;
     height: 160px;
     border-radius: 1rem 1rem 0 0;
 }
@@ -1108,6 +795,7 @@ h1 {
 }
 
 
+
 /* FOOTER */
 
 .basdepage {
@@ -1118,7 +806,7 @@ h1 {
 
 .contenu-footer {
     width: 1600px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: left;
     align-items: flex-start;
