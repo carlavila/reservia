@@ -54,90 +54,61 @@ h1 {
 
 /* MENU */
 
-@media (max-width: 900px) {
-    .nav {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .logo {
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-
-    .nav_regular_blue {
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
-
-    .nav_regular_black {
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-
-    .nav_bold_blue {
-        grid-column-start: 2;
-        grid-row-start: 1;
-
-    }
-}
-
-.header {
-    display: block;
-}
-
-.nav {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr repeat(3, 160px);
-    align-items: center;
-    justify-content: center;
-}
-
 .logo {
-    justify-self: start;
     width: 100px;
     height: 50px;
-    margin: 0px 0px 0 50px;
-    padding-top: 50px;
-    padding-bottom: 16px;
+    margin: 20px 0px 0 50px;
+    float: left;
 }
 
-.nav_link {
-    padding-top: 50px;
-    padding-bottom: 16px;
-    text-align: center;
+#menu {
+    display: grid;
+    grid-template-rows: repeat(2, 30%);
+    margin-top: 2px; 
+    margin-bottom: 3px; 
+    margin-left: 0px;
+}
+    
+#menu ul {     /* Ensemble du menu */
+    text-align: right;
+    margin-top: 0px;
+}
+
+#menu li {   /* Élements des listes */
+    list-style-type: none;
+    display: inline-block;
+    padding-bottom: 30px;
+}    
+
+#menu a {       /* Contenus des listes */
     text-decoration: none;
-    cursor: pointer;
-}
+    padding: 30px 30px;
+    font-size: 16px;
+    display: inline-block;
+}      
 
-.nav a:hover {
+#menu a:hover {
     border-top: 3px solid blue;
 }
 
-.nav_regular_blue {
+.hebergements a {
     color:#0065FC;
 }
 
-.nav_regular_black {
+.activités a {
     color: black;
 }
 
-.nav_bold_blue {
-    color:#0065FC;
-    font-family: "Raleway-SemiBold";
+.sinscrire a {
+    color: #0065FC;
+    font-family:"Raleway-SemiBold";
 }
-
 
 /* RECHERCHER */
 
 #recherches {
     height: auto;
     margin-left: 50px;
-}
-
-.formulaires {
-    width: 25%;
     border: 0.5px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
 }
@@ -150,8 +121,7 @@ h1 {
 }
 
 .formulaires .bouton {
-    width: 30%;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 16px;
     margin-left: 40px;
     color: white;
@@ -165,8 +135,9 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    padding: 15px;
+    padding: 20px;
     background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
 }
 
 
@@ -180,7 +151,6 @@ h1 {
 #filtres {
     width: 100%;
     height: auto;
-    float: right;
 }
 
 #filtres h3 {
@@ -192,10 +162,9 @@ h1 {
 }
 
 #filtres ul {
-    width: 50%;
+    display: inline-block;
     overflow: hidden;
     margin-top: 25px;
-    display: inline-block;
 }
 
 #filtres li {
@@ -352,33 +321,11 @@ h1 {
 
 /* HÉBERGEMENTS À MARSEILLE */
 
-
-@media (max-width: 700px) {
-
-    #hebergementsamarseille {
-        grid-row-start: 2;
-        grid-row-end: 2;
-        flex-direction: column;
-    }
-    
-    #lespluspopulaires {
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-    
-    .alignement {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    }
-
 .deuxiemesection {
     height: auto;
     display: grid;
-    grid-template-columns: 65% 30%;
     margin-left: 50px;
-    column-gap: 40px;
+    column-gap: 50px;
 }
 
 #hebergementsamarseille {
@@ -390,8 +337,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
-}
+    padding: 10px;}
 
 .alignement {
     width: 100%;
@@ -435,7 +381,7 @@ h1 {
     margin-inline-end: 5px;
 }
 
- .bannieres figcaption strong {
+.bannieres figcaption strong {
     font-family: "Raleway-SemiBold";
     color: black;
     font-size: 15px;
@@ -518,8 +464,10 @@ h1 {
 }
 
 .fa-chart-line {
+    float: right;
     font-size: 22px;
-    padding-left: 220px;
+    padding-top: 15px;
+    padding-right: 10px;
 }
 
 .flotte {
@@ -583,28 +531,7 @@ h1 {
 }
 
 
-/* ACTIVITÉS À MARSEILLE */
-
-@media (max-width: 700px) {
-
-    #activitesamarseille {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (6, 1fr);
-    }
-
-    .cont-item1 {
-        width: 90%;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .cont-item1 figure {
-        width: 100%;
-        height: auto;
-    }
-}
+/* ACTIVITÉS À MARSEILLE */    
 
 .activitestitre {
     font-family: "Raleway-SemiBold";
@@ -872,17 +799,16 @@ h1 {
 }
 
 .contenu-footer {
-    width: 1600px;
     margin: 0;
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    font-size: 15px;
+    font-size: 16px;
     padding: 20px 0px 80px;
 }
 
 .bloc {
-    width: 25%;
+    width: 40%;
     margin: 0 35px;
 }
 
@@ -918,3 +844,142 @@ h1 {
 .liste-assistance a:hover {
     text-decoration: underline;
 }
+
+
+
+@media (max-width: 700px) {
+
+/*MENU*/
+    
+    #menu {
+        grid-template-rows: repeat(2, 50%);
+    }
+    
+    .hebergements {
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    
+    .activites {
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    
+    .sinscrire {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+
+/* HÉBERGEMENTS À MARSEILLE */
+
+    #hebergementsamarseille {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .alignement {
+        background-color: white;
+    }   
+
+    .bannieres {
+        width: 100%;
+    }
+    
+
+/* LES PLUS POPULAIRES */
+
+    #lespluspopulaires {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin-bottom: 20px;
+    }
+    
+
+/* ACTIVITÉS À MARSEILLE */
+
+    #activitesamarseille {
+        grid-template-columns: 100%;
+    }
+
+    .cont-item1 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .cont-item1 figure {
+        width: 100%;
+    }
+
+   .cont-item2 {
+       width: 100%;
+       grid-column-start: 1;
+       grid-column-end: 1;
+       grid-row-start: 2;
+       grid-row-end: 2;
+   }
+       
+   .cont-item2 figure {
+       width: 100%;
+   }
+
+   .cont-item3 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    
+    .cont-item3 figure {
+        width: 100%;
+    }
+
+    .cont-item4 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        }
+        
+    .cont-item4 figure {
+        width: 100%;
+    }
+
+    .cont-item5 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        }
+        
+    .cont-item5 figure {
+        width: 100%;
+    }
+
+    .cont-item6 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+        }
+        
+    .cont-item6 figure {
+        width: 100%;
+    }
+
+/* FOOTER */
+
+.contenu-footer {
+    flex-direction: column;
+}
+
+} 
