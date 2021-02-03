@@ -37,39 +37,26 @@ body {
     width: 100%;
 }
 
-h1 {
-    font-family: "Raleway-SemiBold";
-    margin-left: 50px;
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-.p1 {
-    margin-left: 50px;
-    margin-bottom: 22px;
-    font-size: 15px;
-    line-height: 5px;
-}
-
 
 /* MENU */
 
 .logo {
     width: 100px;
     height: 50px;
-    margin: 20px 0px 0 50px;
+    margin: 20px 0px 0 0;
     float: left;
 }
 
 #menu {
-    display: grid;
-    grid-template-rows: repeat(2, 30%);
     margin-top: 2px; 
     margin-bottom: 3px; 
     margin-left: 0px;
 }
     
 #menu ul {     /* Ensemble du menu */
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: 70% repeat(3, 10%);
     text-align: right;
     margin-top: 0px;
 }
@@ -91,12 +78,24 @@ h1 {
     border-top: 3px solid blue;
 }
 
+.hebergements {
+    grid-column-start: 2;
+}
+
 .hebergements a {
     color:#0065FC;
 }
 
+.activites {
+    grid-column-start: 3;
+}
+
 .activités a {
     color: black;
+}
+
+.sinscrire {
+    grid-column-start: 4;
 }
 
 .sinscrire a {
@@ -104,11 +103,22 @@ h1 {
     font-family:"Raleway-SemiBold";
 }
 
+h1 {
+    font-family: "Raleway-SemiBold";
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.p1 {
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 5px;
+}
+
 /* RECHERCHER */
 
 #recherches {
     height: auto;
-    margin-left: 50px;
     border: 0.5px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
 }
@@ -158,7 +168,6 @@ h1 {
     line-height: 10%;
     margin-top: 60px;
     margin-bottom: 10px;
-    margin-left: 50px;
 }
 
 #filtres ul {
@@ -309,7 +318,6 @@ h1 {
 
 .fa-info-circle {
     background-color: white;
-    margin-left: 50px;
     margin-right: 10px;
     font-size: 15px;
 }
@@ -324,7 +332,6 @@ h1 {
 .deuxiemesection {
     height: auto;
     display: grid;
-    margin-left: 50px;
     column-gap: 50px;
 }
 
@@ -351,12 +358,12 @@ h1 {
     flex-wrap: wrap;
 }
 
-.hebergements {
+.hebergementstitre {
     padding-top: 10px;
     padding-left: 30px;
 }
 
-.hebergements h2{
+.hebergementstitre h2{
     font-family: "Raleway-SemiBold";
     font-size: 22px;
 }
@@ -424,14 +431,14 @@ h1 {
 .afficher {
     padding-top: 30px;
     padding-bottom: 5px;
-    padding-left: 5px;
+    
 }
 .afficher a {
     font-family: "Raleway-SemiBold";
     text-decoration: none;
     color: black;
     font-size: 18px;
-    padding-left: 35px;
+    padding-left: 40px;
 }
 
 .afficher a:hover {
@@ -535,27 +542,25 @@ h1 {
 
 .activitestitre {
     font-family: "Raleway-SemiBold";
-    padding-left: 50px;
     padding-top: 35px;
 }
 
 #activitesamarseille {
     display: grid;
     width: 100%;
-    row-gap: 2px;
+    row-gap: 10px;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 360px 450px;
-    margin-left: 10px;
+    grid-template-rows: 40% 60%;
 }
 
 .cont-item1 {
-    width: 90%;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 2;
     transition:0.5s;
-    }
+}
 
  .cont-item1:hover {
     transform : scale(1.2);
@@ -589,7 +594,7 @@ h1 {
 }
 
 .cont-item2 {
-    width: 90%;
+    width: 100%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -629,7 +634,7 @@ h1 {
 }
 
 .cont-item3 {
-    width: 90%;
+    width: 100%;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -669,7 +674,7 @@ h1 {
 }
 
 .cont-item4 { 
-    width: 90%;
+    width: 100%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -709,7 +714,7 @@ h1 {
 }
 
 .cont-item5 { 
-    width: 90%;
+    width: 100%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -749,7 +754,7 @@ h1 {
 }
 
 .cont-item6 {
-    width: 90%;
+    width: 100%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -847,11 +852,24 @@ h1 {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+
+    body {
+        max-width: 700px;
+    }
+
 
 /*MENU*/
-    
+
+    .logo {
+        margin-left: 10px;
+    }
+
     #menu {
+        margin-right: 50px;
+    }
+
+    #menu ul {
         grid-template-rows: repeat(2, 50%);
     }
     
@@ -870,8 +888,40 @@ h1 {
         grid-row-end: 1;
     }
 
+    h1 {
+        margin-left: auto;
+    }
+
+    .p1 {
+        margin-left: auto;
+    }
+
+/* RECHERCHES */
+
+    #recherches {
+        margin-left: auto;
+    }
+
+/* FILTRES */
+
+    #filtres h3 {
+        margin-left: auto;
+    }
+
+    .fa-info-circle {
+        margin-left: auto;
+    }
+
 
 /* HÉBERGEMENTS À MARSEILLE */
+
+    .deuxiemesection {
+        margin-left: auto;
+    }
+
+    .hebergementstitre {
+        padding-left: 0px;
+    }
 
     #hebergementsamarseille {
         grid-row-start: 2;
@@ -888,6 +938,10 @@ h1 {
         width: 100%;
     }
     
+    .afficher a {
+        padding-left: 0px;
+    }
+
 
 /* LES PLUS POPULAIRES */
 
@@ -896,9 +950,17 @@ h1 {
         grid-column-end: 1;
         margin-bottom: 20px;
     }
+
+    #activitesamarseille {
+        margin-left: auto;
+    }
     
 
 /* ACTIVITÉS À MARSEILLE */
+
+    .activitestitre {
+        padding-left: 0px;
+    }
 
     #activitesamarseille {
         grid-template-columns: 100%;
@@ -978,8 +1040,9 @@ h1 {
 
 /* FOOTER */
 
-.contenu-footer {
-    flex-direction: column;
-}
-
-} 
+    .contenu-footer {
+        flex-direction: column;
+        margin-left: auto;
+    }
+       
+    } 
