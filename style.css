@@ -131,7 +131,7 @@ h1 {
 }
 
 .formulaires .bouton {
-    line-height: 50px;
+    line-height: 55px;
     font-size: 16px;
     margin-left: 40px;
     color: white;
@@ -145,7 +145,7 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    padding: 20px;
+    padding: 23px;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -543,14 +543,15 @@ h1 {
 .activitestitre {
     font-family: "Raleway-SemiBold";
     padding-top: 35px;
+    padding-bottom: 10px;
 }
 
 #activitesamarseille {
     display: grid;
-    width: 100%;
-    row-gap: 10px;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 40% 60%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
 }
 
 .cont-item1 {
@@ -571,11 +572,14 @@ h1 {
 }
 
 .cont-item1 figure {
-    display: block;
+    width: 100%;
+    height: 585px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 585px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item1 img {
@@ -611,11 +615,14 @@ h1 {
 }
 
 .cont-item2 figure {
-    display: block;
+    width: 100%;
+    height: 320px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 320px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item2 img {
@@ -651,11 +658,14 @@ h1 {
 }
     
 .cont-item3 figure {
-    display: block;
+    width: 100%;
+    height: 585px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 585px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item3 img {
@@ -691,11 +701,14 @@ h1 {
 }
 
 .cont-item4 figure {
-    display: block;
+    width: 100%;
+    height: 320px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 320px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item4 img {
@@ -731,11 +744,14 @@ h1 {
 }
 
 .cont-item5 figure {
-    display: block;
+    width: 100%;
+    height: 220px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 220px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item5 img {
@@ -771,11 +787,14 @@ h1 {
 }
 
 .cont-item6 figure {
-    display: block;
+    width: 100%;
+    height: 220px;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 90%;
-    height: 220px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
 }
 
 .cont-item6 img {
@@ -862,11 +881,11 @@ h1 {
 /*MENU*/
 
     .logo {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     #menu {
-        margin-right: 50px;
+        margin-right: 80px;
     }
 
     #menu ul {
@@ -889,38 +908,38 @@ h1 {
     }
 
     h1 {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
     .p1 {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
 /* RECHERCHES */
 
     #recherches {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
 /* FILTRES */
 
     #filtres h3 {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
     .fa-info-circle {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
 
 /* HÉBERGEMENTS À MARSEILLE */
 
     .deuxiemesection {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
     .hebergementstitre {
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     #hebergementsamarseille {
@@ -939,7 +958,7 @@ h1 {
     }
     
     .afficher a {
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
 
@@ -952,91 +971,65 @@ h1 {
     }
 
     #activitesamarseille {
-        margin-left: auto;
+        margin-left: 10px;
     }
     
 
 /* ACTIVITÉS À MARSEILLE */
 
     .activitestitre {
-        padding-left: 0px;
+        padding-left: 30px;
     }
 
     #activitesamarseille {
+        margin-left: 10px;
         grid-template-columns: 100%;
+        grid-template-rows: repeat (6, 12rem);
+        row-gap: 10px;
     }
 
     .cont-item1 {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 1;
     }
 
-    .cont-item1 figure {
-        width: 100%;
-    }
-
    .cont-item2 {
-       width: 100%;
        grid-column-start: 1;
        grid-column-end: 1;
        grid-row-start: 2;
        grid-row-end: 2;
    }
-       
-   .cont-item2 figure {
-       width: 100%;
-   }
 
    .cont-item3 {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 3;
         grid-row-end: 3;
     }
-    
-    .cont-item3 figure {
-        width: 100%;
-    }
 
     .cont-item4 {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 4;
         grid-row-end: 4;
         }
-        
-    .cont-item4 figure {
-        width: 100%;
-    }
 
     .cont-item5 {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 5;
         grid-row-end: 5;
         }
-        
-    .cont-item5 figure {
-        width: 100%;
-    }
 
     .cont-item6 {
-        width: 100%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 6;
         grid-row-end: 6;
         }
         
-    .cont-item6 figure {
-        width: 100%;
-    }
 
 /* FOOTER */
 
