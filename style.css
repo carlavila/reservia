@@ -92,7 +92,7 @@ menu li {
     color: #0065FC;
     font-family:"Raleway-SemiBold";
     text-decoration: none;
-    border: transparent 3px;
+    border-bottom: 3px transparent solid;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -883,19 +883,24 @@ h1 {
 /*MENU*/
 
     .menu ul {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
     }
 
     .sinscrire {
         order: 3;
+        width: 100%;
     }
 
     .hebergements {
         order: 2;
+        width: 50%;
     }
 
     .activites {
         order: 1;
+        width: 50%;
     }
 
     h1 {
