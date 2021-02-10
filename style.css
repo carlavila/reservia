@@ -75,7 +75,7 @@ menu li {
 
 .menu a:hover {
     border-top: 3px solid blue;
-    padding-top: 30px;
+    padding-top: 30px; 
 }
 
 .hebergements a {
@@ -92,9 +92,6 @@ menu li {
     color: #0065FC;
     font-family:"Raleway-SemiBold";
     text-decoration: none;
-    border-bottom: 3px transparent solid;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 h1 {
@@ -370,8 +367,7 @@ h1 {
 }
 
 .bannieres {
-    width: 25%;
-    margin: 5px;
+    width: 33%;
     transition:0.5s;
 } 
 
@@ -383,10 +379,10 @@ h1 {
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-block-start: 2px;
-    margin-block-end: 10px;
-    margin-inline-start: 2px;
-    margin-inline-end: 10px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
     padding-block-start: 2px;
     padding-block-end: 8px;
     padding-inline-start: 2px;
@@ -492,7 +488,7 @@ h1 {
 .flotte figure {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -886,16 +882,35 @@ h1 {
         flex-direction: row-reverse;
         justify-content: space-around;
         flex-wrap: wrap-reverse;
+        padding-left: 0;
+    }
+
+    .menu {
+        border-bottom: 5px solid #F2F2F2;
+        padding-bottom: 0;
+    }
+
+    .menu a:hover {
+        border-top: none;
+        padding-top: 0px;
     }
 
     .sinscrire {
         order: 3;
         width: 100%;
+        text-align: right;
+        height: 70px;
     }
 
     .hebergements {
         order: 2;
         width: 50%;
+        text-align: center;
+    }
+
+    .hebergements a:hover {
+        border-bottom: 5px solid blue;
+        padding-bottom: 17px;
     }
 
     .activites {
@@ -903,7 +918,13 @@ h1 {
         width: 50%;
     }
 
+    .activites a:hover {
+        border-bottom: 5px solid blue;
+        padding-bottom: 17px;
+    }
+
     h1 {
+        padding-top: 10px;
         margin-left: 10px;
     }
 
