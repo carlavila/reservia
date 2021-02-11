@@ -10,13 +10,12 @@
 
 html, body {
     background-attachment: scroll;  /* Le fond restera fixe */
-    height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: "Raleway";
     }
 
-head {
+header {
     margin: 0;
     padding: 0;
 }
@@ -24,19 +23,8 @@ head {
 body {
     max-width: 1800px;
     display: block;
-    flex-direction: column;
     margin: auto;
 }
-
-.contenu {
-    flex: 1 0 auto;
-}
-
-.premieresection {
-    display: block;
-    width: 100%;
-}
-
 
 /* MENU */
 
@@ -51,8 +39,8 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .menu ul {
@@ -63,24 +51,27 @@ body {
     width: 100%;
 }
 
-menu li {
-    width: 50%;
-}
-
 .menu a {
     border: transparent 3px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.menu a:hover {
-    border-top: 3px solid blue;
-    padding-top: 30px; 
+.hebergements a:hover {
+    border-top: 4px solid blue;
+    padding-top: 40px;
 }
 
 .hebergements a {
     color:#0065FC;
     text-decoration: none;
+    border-top: 4px solid blue;
+    padding-top: 40px;
+}
+
+.activites a:hover {
+    border-top: 4px solid blue;
+    padding-top: 40px;
 }
 
 .activites a {
@@ -108,6 +99,11 @@ h1 {
 }
 
 /* RECHERCHER */
+
+.premieresection {
+    display: block;
+    width: 100%;
+}
 
 #recherches {
     height: auto;
@@ -173,6 +169,7 @@ h1 {
     display: inline-block;
     overflow: hidden;
     margin-top: 25px;
+    width: 80%;
 }
 
 #filtres li {
@@ -207,8 +204,8 @@ h1 {
     color: #0065FC;
     background-color: #deebff;
     border-radius: 100%;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 17px;
+    padding: 17px;
 }
 
 .economique a {
@@ -239,8 +236,8 @@ h1 {
     color: #0065FC;
     background-color: #deebff;
     border-radius: 100%;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 17px;
+    padding: 17px;
 }
 
 .familial a {
@@ -271,8 +268,8 @@ h1 {
     color: #0065FC; 
     background-color: #deebff;
     border-radius: 100%;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 17px;
+    padding: 17px;
 }
 
 .romantique a {
@@ -302,8 +299,8 @@ h1 {
     color: #0065FC;
     background-color: #deebff;
     border-radius: 100%;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 17px;
+    padding: 17px;
 }
 
 .animaux-autorises a {
@@ -814,10 +811,9 @@ h1 {
 
 
 
-/* FOOTER */
+/* FOOT */
 
 .basdepage {
-    flex-shrink: 0;
     width: 100%;
     background-color:#F2F2F2;
 }
@@ -908,6 +904,10 @@ h1 {
         text-align: center;
     }
 
+    .hebergements a {
+        border-top: none;
+    }
+
     .hebergements a:hover {
         border-bottom: 5px solid blue;
         padding-bottom: 17px;
@@ -943,6 +943,13 @@ h1 {
         padding: 25px;
     }
 
+    .champ {
+        font-family: "Raleway-SemiBold";
+        border: none;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
     .bouton {
         display: none;
     }
@@ -968,6 +975,23 @@ h1 {
     .fa-info-circle {
         margin-left: 10px;
     }
+
+    .premiere {
+        padding-left: 0;
+    }
+
+    .deuxieme {
+        padding-left: 0;
+    }
+
+    .troisieme {
+        padding-left: 0;
+    }
+
+    .quatrieme {
+        padding-left: 0;
+    }
+
 
 
 /* HÉBERGEMENTS À MARSEILLE */
