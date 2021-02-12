@@ -122,12 +122,13 @@ h1 {
 
 .bouton {
     width: 150px;
-    line-height: 55px;
+    line-height: 60px;
     font-size: 16px;
     color: white;
     font-family: "Raleway-SemiBold";
     background-color: #0065FC;
     border-radius: 0px 20px 20px 0px;
+    border: none;
 }
 
 .bouton:hover {
@@ -135,7 +136,7 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    padding: 23px;
+    padding: 25px;
     background-color: #F2F2F2;
     border-radius: 20px 0px 0px 20px;
 }
@@ -151,6 +152,7 @@ h1 {
     font-family: "Raleway-SemiBold";
     font-size: 16px;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 #filtres {
@@ -161,14 +163,14 @@ h1 {
 #filtres h3 {
     float: left;
     line-height: 10%;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
 #filtres ul {
     display: inline-block;
     overflow: hidden;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 80%;
 }
 
@@ -184,20 +186,19 @@ h1 {
 
 .premiere {
     float: left;
-    margin-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
     transition:0.5s;
 }
 
 .premiere:hover {
     transform : scale(1.2);
-}
+}   
 
-.premiere .economique {
+.economique {
     border: 2px solid #dbd9d9;
     border-radius: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .economique i {
@@ -215,11 +216,6 @@ h1 {
 
 .deuxieme {
     float: left;
-    margin-left: 5px;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
     transition:0.5s;
 }
 
@@ -227,9 +223,12 @@ h1 {
     transform : scale(1.2);
 }
 
-.deuxieme .familial {
+.familial {
     border: 2px solid #dbd9d9;
     border-radius: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .familial i {
@@ -247,11 +246,6 @@ h1 {
 
 .troisieme {
     float: left;
-    padding-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
     transition:0.5s;
 }
 
@@ -259,9 +253,12 @@ h1 {
     transform : scale(1.2);
 }
 
-.troisieme .romantique {
+.romantique {
     border: 2px solid #dbd9d9;
     border-radius: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .romantique i {
@@ -279,10 +276,6 @@ h1 {
 
 .quatrieme {
     float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     transition:0.5s;
 }
 
@@ -290,9 +283,12 @@ h1 {
     transform : scale(1.2);
 }
 
-.quatrieme .animaux-autorises {
+.animaux-autorises {
     border: 2px solid #dbd9d9;
     border-radius: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .animaux-autorises i {
@@ -413,6 +409,10 @@ h1 {
 
 .etoiles1 {
     padding-left: 10px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .fa-star {
@@ -493,10 +493,10 @@ h1 {
 
 .flotte img {
     object-fit: cover;
-    width: 35%;
+    width: 33%;
     height: 160px;
     border-radius: 1rem 0 0 1rem;
-    padding: 5px;
+    padding: 6px;
 }
 
 .flotte a {
@@ -509,23 +509,24 @@ h1 {
     line-height: 25px;
 }
 
-.legende figcaption strong {
+.legende  strong {
     font-family: "Raleway-SemiBold";
     color: black;
     font-size: 15px;
 }
 
-.legende figcaption span {
+.legende  span {
     color: grey;
     font-size: 13px;
 }
 
 .etoiles2 {
-    padding-top: 65px;
+    padding-top: 40px;
+    justify-content: flex-start;
 }
 
 .etoiles3 {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .etoilegrise2 .fa-star {
@@ -973,23 +974,23 @@ h1 {
     }
 
     .fa-info-circle {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
-    .premiere {
-        padding-left: 0;
+    .economique {
+        margin-left: 20px;
     }
 
-    .deuxieme {
-        padding-left: 0;
+    .familial {
+        margin-left: 20px;
     }
 
-    .troisieme {
-        padding-left: 0;
+    .romantique {
+        margin-left: 20px;
     }
 
-    .quatrieme {
-        padding-left: 0;
+    .animaux-autorisés {
+        margin-left: 20px;
     }
 
 
