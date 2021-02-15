@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Raleway";
     src: url("raleway/Raleway-Regular.ttf") format("truetype");
@@ -15,16 +16,17 @@ html, body {
     font-family: "Raleway";
     }
 
-header {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     max-width: 1800px;
     display: block;
     margin: auto;
 }
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* MENU */
 
@@ -79,7 +81,7 @@ body {
     text-decoration: none;
 }
 
-.sinscrire {
+.sinscrire a {
     color: #0065FC;
     font-family:"Raleway-SemiBold";
     text-decoration: none;
@@ -97,6 +99,7 @@ h1 {
     font-size: 15px;
     line-height: 5px;
 }
+
 
 /* RECHERCHER */
 
@@ -811,7 +814,6 @@ h1 {
 }
 
 
-
 /* FOOT */
 
 .basdepage {
@@ -865,7 +867,8 @@ h1 {
 .liste-assistance a:hover {
     text-decoration: underline;
 }
-    
+  
+
 
 @media (max-width: 750px) {
 
@@ -994,7 +997,6 @@ h1 {
     }
 
 
-
 /* HÉBERGEMENTS À MARSEILLE */
 
     .deuxiemesection {
@@ -1064,6 +1066,7 @@ h1 {
         height: 150px;
     }
 
+
 /* FOOTER */
 
     .contenu-footer {
@@ -1073,6 +1076,4 @@ h1 {
         padding-top: 30px;
     }
 
-
-       
-    } 
+} 
