@@ -556,7 +556,6 @@ h1 {
 }
 
 .cont-item1 {
-    width: 100%;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -599,7 +598,6 @@ h1 {
 }
 
 .cont-item2 {
-    width: 100%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -642,7 +640,6 @@ h1 {
 }
 
 .cont-item3 {
-    width: 100%;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -685,7 +682,6 @@ h1 {
 }
 
 .cont-item4 { 
-    width: 100%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -728,7 +724,6 @@ h1 {
 }
 
 .cont-item5 { 
-    width: 100%;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -771,7 +766,6 @@ h1 {
 }
 
 .cont-item6 {
-    width: 100%;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -824,6 +818,7 @@ h1 {
 .contenu-footer {
     margin: 0;
     display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: flex-start;
     font-size: 16px;
@@ -879,7 +874,7 @@ h1 {
 /*MENU*/
 
     .menu ul {
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap-reverse;
         padding-left: 0;
@@ -896,14 +891,12 @@ h1 {
     }
 
     .sinscrire {
-        order: 3;
         width: 100%;
         text-align: right;
         height: 70px;
     }
 
     .hebergements {
-        order: 2;
         width: 50%;
         text-align: center;
     }
@@ -918,7 +911,6 @@ h1 {
     }
 
     .activites {
-        order: 1;
         width: 50%;
     }
 
@@ -980,21 +972,7 @@ h1 {
         margin-left: 20px;
     }
 
-    .economique {
-        margin-left: 20px;
-    }
 
-    .familial {
-        margin-left: 20px;
-    }
-
-    .romantique {
-        margin-left: 20px;
-    }
-
-    .animaux-autorisés {
-        margin-left: 20px;
-    }
 
 
 /* HÉBERGEMENTS À MARSEILLE */
