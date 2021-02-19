@@ -549,7 +549,7 @@ h1 {
 #activitesamarseille {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40% 40%;
+    grid-template-rows:  repeat(2, 350px);
     grid-column-gap: 50px;
     grid-row-gap: 25px;
     margin-left: 30px;
@@ -878,16 +878,12 @@ h1 {
         justify-content: space-around;
         flex-wrap: wrap-reverse;
         padding-left: 0;
+        
     }
 
-    .menu {
-        border-bottom: 5px solid #F2F2F2;
-        padding-bottom: 0;
-    }
 
     .menu a:hover {
         border-top: none;
-        padding-top: 0px;
     }
 
     .sinscrire {
@@ -899,24 +895,23 @@ h1 {
     .hebergements {
         width: 50%;
         text-align: center;
+        border-bottom: 3px solid blue;
+        padding-bottom: 30px;
     }
 
     .hebergements a {
         border-top: none;
     }
 
-    .hebergements a:hover {
-        border-bottom: 5px solid blue;
-        padding-bottom: 17px;
-    }
-
     .activites {
         width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
     }
 
-    .activites a:hover {
-        border-bottom: 5px solid blue;
-        padding-bottom: 17px;
+    .activites:hover {
+        border-bottom: 3px solid blue;
+        padding-bottom: 22px;
     }
 
     h1 {
